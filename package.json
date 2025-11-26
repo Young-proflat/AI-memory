@@ -1,0 +1,30 @@
+{
+  "name": "ai-memory",
+  "version": "1.0.0",
+  "main": "server.jsx",
+  "scripts": {
+    "start": "node server.jsx",
+    "dev": "nodemon server.jsx",
+    "test": "node scripts/testAll.js",
+    "test:api": "node scripts/testAddMemory.js",
+    "test:response": "node scripts/testGetResponse.js",
+    "test:search": "node scripts/testSemanticSearch.js",
+    "test:filters": "node scripts/testGraphFilters.js",
+    "test:all": "node scripts/testAll.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@google/generative-ai": "^0.21.0",
+    "@pinecone-database/pinecone": "^4.1.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "neo4j-driver": "^5.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
