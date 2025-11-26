@@ -2,7 +2,6 @@
 
 > A full-stack semantic memory management system with knowledge graph visualization, designed to store, retrieve, and visualize human-like memory relationships using vector embeddings and graph databases.
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-5.1.0-black.svg)](https://expressjs.com/)
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
@@ -18,6 +17,7 @@
 - [Getting Started](#getting-started)
 - [API Documentation](#api-documentation)
 - [Project Structure](#project-structure)
+
 ---
 
 ## 🎯 Overview
@@ -40,7 +40,7 @@ The system accepts natural language input, converts it to semantic embeddings us
 
 1. **REST API for Natural Language Input**
    - Accepts natural language text input
-   - Generates vector embeddings using Google Gemini (`gemini-embedding-001`)
+   - Generates vector embeddings using Google Gemini
    - Stores memories in Pinecone with metadata
    - Supports categorization via namespaces
 
@@ -303,6 +303,20 @@ AI-Memory/
 ├── GRAPH_FILTER_INFO.md      # Graph filter documentation
 └── README.md                 # This file
 ```
+
+##  Project Application Mockup
+
+**Home**
+
+<img width="1366" height="768" alt="Screenshot (702)" src="https://github.com/user-attachments/assets/fe902ef3-e43c-4824-8b46-a46970597b43" />
+
+**Application memory view** 
+
+<img width="1366" height="768" alt="Screenshot (703)" src="https://github.com/user-attachments/assets/95d7d15e-1f9e-46d8-a16c-3d8c5150e4ef" />
+
+**Semantic Search**
+
+<img width="1366" height="768" alt="Screenshot (704)" src="https://github.com/user-attachments/assets/7cc59115-3930-4159-bb1f-96b6d1d49958" />
 ---
 
 **Note**: Make sure your `.env` file is configured and both Pinecone and Neo4j are accessible before running tests.
